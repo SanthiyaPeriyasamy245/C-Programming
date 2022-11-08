@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+  int a,b,op;
+  printf("enter a values and op:");
+  scanf("%d %d %c",&a,&b,&op);
+  switch(op)
+  {
+
+  case'+':
+    printf(" sum of %d and %d is  %d",a,b,a+b);
+    break;
+  case '-':
+    printf("difference of %d and %d is %d",a,b,a-b);
+        break;
+  case '*':
+    printf("multiplication of %d and %d is %d",a,b,a*b);
+        break;
+     case '/':
+    printf("division of %d and %d is %d",a,b,a/b);
+        break;
+     case '%':
+    printf(" remainder of %d and %d is %d",a,b,a%b);
+        break;
+     default:
+         printf("invalid input");
+
+
+
+
+
+  }
+
+
+
+}
