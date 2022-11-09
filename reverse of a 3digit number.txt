@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+
+    int i,n,n1,sum;
+    printf("enter a number:");
+    scanf("%d",&n);
+    n1=n;
+    {
+    int r1=(n1%10)*100;
+    int r2=(n1/10)%10*10;
+    int r3=(n/10)/10;
+    sum=r1+r2+r3;
+    printf("the reverse of a value %d is %d",n,sum);
+    }
+}
