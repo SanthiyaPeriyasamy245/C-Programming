@@ -3,7 +3,7 @@
 int main()
 {
 
-    int n,sum=0,r1,r2,temp,count=0,i;
+    int n,sum=0,r2,temp,count=0,i;
     printf("enter the number:");
     scanf("%d",&n);
     temp=n;
@@ -11,7 +11,7 @@ int main()
 
     while(n!=0)
     {
-        r1= n%10;
+        
         n=n/10;
         count=count+1;
 
