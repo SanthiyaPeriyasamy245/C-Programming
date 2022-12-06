@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+int n;
+printf("enter a number:");
+scanf("%d",&n);
+int sum= (n*(n+1))/2;
+printf("sum of the natural numbers till %d is %d ",n,sum);
+}
