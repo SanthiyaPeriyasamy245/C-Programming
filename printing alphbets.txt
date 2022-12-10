@@ -1,0 +1,8 @@
+#include<stdio.h>
+void main(){
+char s;
+printf("Alphabet letters are :\n");
+for(char i='A';i<='Z';i++){
+    printf(" %c \n",i);
+}
+}
