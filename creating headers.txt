@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include"headers.h"
+int main()
+{
+    printf("sum of %d and %d is %d\n",min,max,min+max);
+    printf(" tea is %s for headache\n",TEA);
+    printf("coffee is %s for headache\n",COFFEE);
+    return 0;
+}
