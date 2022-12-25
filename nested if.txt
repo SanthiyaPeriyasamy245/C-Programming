@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    char name[20];
+    int age;
+    char gender;
+    printf("enter your name and age and also gender(f/m):");
+    scanf("%s %d %c",name,&age,&gender);
+    printf("%s is %d years old \n",name,age);
+    if(age<=18)
+    {
+        if(gender=='f')
+        {
+            printf("congratulations %s!, you're eligible for the jasmine academy's education scholarship \n",name);
+        }
+
+        }
+else{
+    printf("sorry! ,you're not eligible for the scholarship\n");
+}
+return 0;
+
+}
