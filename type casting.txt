@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n;
+    int book=82.47;
+    printf("enter the number of books in  the store:\n");
+    scanf("%d",&n);
+    printf("the total amount of books at the store is %.2f\n",(float)n*book);
+    /*here i have converted integer
+     to float it works only for this line if you want use book variable at somewhere it always be an integer*/
+    printf("they sell two books per day, then the amount they earn per day is:\n %.2f",(float)book*2);
+    /*As well as here i have converted the integer term to float*/
+    return 0;
+    }
