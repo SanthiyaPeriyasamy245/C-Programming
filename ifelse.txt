@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n;
+    printf("enter anumber:");
+    scanf("%d",&n);
+    if(n%13==0)
+    {
+        if(n%2==0)
+        {
+            printf("%d is divisible by 2 and also 13",n);
+        }
+        else{
+        if(n%13==0)// this line is to show the if else statement in else
+        {
+            printf("%d is only divisible by 13",n);
+        }
+        else{
+           printf("%d is only divisible by 2",n);
+        }
+    }
+    }
+    else{
+        printf("%d is not divisible by both 2 and 13");
+    }
+    return 0;
+}
