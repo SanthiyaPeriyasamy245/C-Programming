@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  float n1,n2,n3;
+  printf("enter three numbers:");
+  scanf("%f %f %f",&n1,&n2,&n3);
+  float average=(n1+n2+n3)/3;
+  if(average>50)
+  {
+      printf("%f is greater than 50",average);
+  }
+  else if(average>100)//else if executed when if condition failed.
+  {
+       printf("%f is greater than 100",average);
+  }
+  else if(average>150)
+  {
+       printf("%f is greater than 150",average);
+  }
+  else{
+    printf("average of %.2f,%.2f,%.2f is %.2f which is not greter than 50,100,150 ",n1,n2,n3,average);
+  }
+return 0;
+}
