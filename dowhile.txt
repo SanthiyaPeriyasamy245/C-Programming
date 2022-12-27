@@ -1,0 +1,16 @@
+#include<stdio.h> // even hough if conditions not true the statement will executed at least once.
+int main()
+{
+    int i=10;
+    int a;
+    printf("enter a number:");
+    scanf("%d",&a);
+
+do{
+    printf("%d\n",i);
+    i++;
+}
+    while(i<=a); //colone should be there in do while
+
+
+}
