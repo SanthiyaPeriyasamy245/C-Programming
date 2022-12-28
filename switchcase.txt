@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    char c;
+    printf("enter your grade in captila letter:");
+    scanf("%c",&c);
+    switch(c)
+    {
+    case'A':
+        printf(" congratulations! %c is highest grade",c);
+        break;
+    case'B':
+        printf(" %c is a good grade",c);
+        break;
+    case'C':
+        printf("%c is pass grade you have a capability to score good marks!",c);
+        break;
+    case'F':
+        printf("%c is not a pass  grade don't worry! work hard  ");
+        break;
+    default:
+        printf("invalid input!");
+}
+return 0;
+}
