@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+int main()
+{
+    int c;
+    printf("enter a single chracter in capital letters:");
+    scanf("%c",&c);
+    if(isalpha(c)){
+        printf("correct input \n");
+        if(isupper(c)){
+                printf("great job!\n ");
+            }
+        }else{
+                printf("invalid input!");
+            }
+
+
+    return 0;
+}
