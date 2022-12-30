@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+#include<string.h>
+int main()
+{
+//strcat to add another string to the previous string.
+//strcpy is used to change whole string to new.
+ char s[100]="Santhiya";
+ char c[100]=" is a c developer";
+ strcat(s,c);
+ printf("%s\n",s);
+    char t[100];
+    printf("enter the name of a person:");
+    scanf("%s",&t);
+    printf("%s\n",t);
+    strcat(t," is a good person\n");
+    printf("%s\n",t);
+    strcpy(t,"hard worker \n");
+    printf("%s\n",t);
+    return 0;
+
+}
