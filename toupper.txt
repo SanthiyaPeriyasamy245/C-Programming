@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+#include<string.h>
+int main()
+{
+    char s;
+    char c;
+  printf("enter a single charater to convert into uppercase and lowercase letter:");
+  scanf("%c,%c",&s,&c);
+  if(isalpha(s)&&isalpha(c)){
+    if(isupper(s)){
+        if(isupper(c)){
+            printf("%c is a uppercase\n %c is also a uppercase",s,c);
+        }
+        else{
+                printf("results after the conversion of lowercase to uppercase:\n");
+            printf("%c %c",toupper(s),toupper(c));
+        }
+    }
+  }
+  else{
+    printf("sorry! invalid input");
+  }
+
+    return 0;
+}
