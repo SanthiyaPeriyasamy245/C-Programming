@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main() // puts and gets only for str characters.
+{
+    char dogsname[25];
+    char catsname[25];
+    puts("enter a dog name:");//puts is similar to printf it automatically goes to new line without\n.
+    gets(dogsname);//similar to scanf it doesn't need formate specifier.
+    strcat(dogsname," love chicken");
+    puts(dogsname);
+    puts("enter a cat name:");
+    gets(catsname);
+    strcat(catsname," love fish");
+    puts(catsname);
+    return 0;
+
+}
