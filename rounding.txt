@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+
+        char c;
+        printf("enter your choice (u/d):\n");
+        scanf("%c",&c);
+        float n;
+        printf("enter a number:\n");
+        scanf("%f",&n);
+        if(c=='u')
+        {
+            printf("the roundup of a given value is %.2f",ceil(n)); // ceil will round value to next value eg: 3.3 result willbe 4.
+        }
+        else if(c=='d')
+        {
+            printf("the round down of a given value is %.2f",floor(n));//floor will round to next value if value after a decimal point is 5 or >5
+        }
+        else{
+            printf(" sorry! invalid input");
+        }
+        return 0;
+}
