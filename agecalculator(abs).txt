@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    int year1;
+    int year2;
+    printf("enter the year1:");
+    scanf("%d",&year1);
+    printf("enter the year2:");
+    scanf("%d",&year2);
+    int age=abs(year1-year2);  // abs function used to convert negative number to positive.
+    printf("your age is %d",age);
+    return 0;
+}
