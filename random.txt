@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+
+    for(int i=1;i<=10;i++)
+    {
+        int n=((rand()%5)+1);//random function used to get random value.
+        printf("%d\n",n);
+    }
+    return 0;
+}
