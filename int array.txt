@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int i;
+    int sum=0;
+    int n[6]={23,12,5,67,12,56};
+    for(i=0;i<=6;i++)
+    {
+      printf("element%d:%d\n",i,n[i]);
+    }
+     for(i=0;i<=6;i++)
+    {
+       sum=sum+n[i];
+
+    }
+    printf("average of a given array is %d\n",sum/5);
+    return 0;
+}
