@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdio.h>
+int main()
+{
+
+    char best_player;
+    int i;
+    float max=1.00;
+    char players [5]={'A','B','C','D','E','F'};
+    int matches[5]={6,7,8,9,5,8};
+    int score[5]={120,230,405,271,382,284};
+    float avg_score[5];
+
+    for( i=0;i<5;i++){
+       avg_score[i]=(float)score[i]/(float)matches[i];
+
+        printf("%c\t %d\t %d\t %.2f\t",players[i],matches[i],score[i],avg_score[i]);
+         printf("\n");
+
+    if(avg_score[i]>max)
+    {
+        float greatest=avg_score[i];
+        best_player=players[i];
+    }
+
+}
+    printf("The best player is %c ",best_player);
+    return 0;
+}
+
