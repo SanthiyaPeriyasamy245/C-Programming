@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    //pointers are used to store Address of a variable in  a address f another variable;
+    int a=123;
+    char e ='v';
+    printf("%d\n",&e);
+    printf("%d\n",&a);//address of a (data type)integer value.
+    printf("the address fo a variable a is %p\n",&a);
+    int *c=&a;
+    printf("the address fo a variable a is %p\n",c);
+    printf("the address fo a variable a is %p\n",&c);
+    printf("%d,%d\n",a,c);
+
+    return 0;
+}
