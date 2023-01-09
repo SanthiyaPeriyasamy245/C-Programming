@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a=123;
+    int c=5;
+    int n=7;
+    printf("the value of n is %d\n",n);
+    printf("the integer data type id is %d\n",&n);
+    printf("%p\n",&n);
+    int *e=n;// the value of an another variable accessed by derefference.
+    printf("the value in variable e is %d\n",e);
+    printf("the address of a variable e is %p\n",&n);
+   int *m=c;// the value of an another variable accessed by derefference.
+    printf("value stored in a variable c %d\n",m);
+    return 0;
+
+
+}
