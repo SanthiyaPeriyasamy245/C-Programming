@@ -1,0 +1,19 @@
+#include<stdio.h>
+int  main()
+{
+    int i;
+    int n[5]={1,2,3,4,5};
+    printf("i\t address\t  value\n");
+    for(i=0;i<=5;i++)
+    {
+        printf(" %d\t%p  %d\n ",i,&n[i],n[i]);
+
+    }
+    //derefference %d *n used to get value stored in a pointer variable
+    //%p and &variable  is to get address of the variable.
+     printf("address of a first element in a array %p\n",&n);
+     printf("value of a first element in a array %d\n",*n);
+     printf("value of a first element in a array %d\n",*(n+1));
+
+    return 0;
+}
