@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char name2[]="santhiya is a good programmer";
+    char *name1="c programmer";
+    puts(name1);
+    name1="java programmer";
+    puts(name1);
+    return 0;
+
+;}
