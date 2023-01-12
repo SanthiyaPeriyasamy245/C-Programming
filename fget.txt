@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+
+    char flower[100];
+    char *flower1=flower;
+    printf("enter the flower name:\n");
+    fgets(flower1,30,stdin);//30 is a number of characters to display and stdin must.
+    puts(flower1);
+    return 0;
+
+}
