@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+
+{
+
+    int i,num;
+    int *numbers;
+    int total=0;
+    float avg;
+
+    printf("enter the number of elements?\n");
+    scanf("%d",&num);
+    //malloc used to fix the required memory as per the given values.
+    numbers=(int*)malloc(num*sizeof(int));//memory allocation
+    printf("enter the elements boss!\n");
+    for( i=0;i<num;i++)
+    {
+        printf("element[%d]:\n",i);
+        scanf(" %d",&numbers[i]);
+        total=total+numbers[i];
+
+    }
+    avg=(float)total/(float)num;
+    printf("average of given elements are! %.2f\n",avg);
+    return 0;
+
+}
