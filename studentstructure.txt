@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include "details.h"
+int main()
+{
+struct student santhiya;
+santhiya.rollno=49;
+santhiya.bloodgroup='O';
+printf("enter your first name:");
+gets(santhiya.firstname);
+printf("enter your last name:");
+gets(santhiya.lastname);
+printf("student1 details!\n");
+printf("first name:");
+printf("%s",santhiya.firstname);
+printf("\n");
+printf("last name:");
+puts(santhiya.lastname);
+printf("rollnumber:");
+printf("%d",santhiya.rollno);
+printf("\n");
+printf("bloodgroup:");
+printf("%c",santhiya.bloodgroup);
+return 0;
+}
