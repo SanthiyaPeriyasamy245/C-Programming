@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    FILE*fpointer;//FILE is a keyword
+    fpointer=fopen("file1.txt","w");//fopen to create a file and "w" represents to write.
+    fprintf(fpointer,"cool! everything will be fine");
+    fclose(fpointer);
+
+}
