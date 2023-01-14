@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+   FILE *fpointer;
+   fpointer=fopen("mentor.txt","a");
+   fprintf(fpointer,"that's so funny!\n");
+  fclose(fpointer);
+
+    return 0;
+
+
+}
