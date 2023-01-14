@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+void  printing();
+int n=123;//global variable we can access it on the entire program.
+int main()
+{
+  printf("%d is a number\n",n);
+  printing();
+    return 0;
+
+
+}
+void  printing()
+{
+printf("%d is a number",n);
+return ;
+}
