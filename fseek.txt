@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+   FILE *fpointer;
+   fpointer=fopen("mentor.txt","w");
+   fputs("i am good",fpointer);
+   fseek(fpointer,5,SEEK_SET);
+   fputs("so happy to see you",fpointer);
+   fseek(fpointer,-10,SEEK_END);
+   fputs("good",fpointer);
+  fclose(fpointer);
+
+    return 0;
+
+
+}
