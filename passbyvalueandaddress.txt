@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+void passbyvalue(int i);
+void passbyrefference(int *i);
+int main()
+{
+    int t=123;
+    passbyvalue(t);
+    printf("pass by value t=%d\n",t);
+    passbyrefference(&t);
+    printf("pass by refference t=%d",t);
+}
+void passbyvalue(int i)
+{
+    i=100;
+    return;
+}
+void passbyrefference(int *i)
+{
+   *i=45;
+    return;
+}
