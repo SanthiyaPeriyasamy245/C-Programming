@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    FILE *fpointer;
+   fpointer=fopen("mentor.txt","r");
+   char singleline[150];
+   while(!feof(fpointer)){
+    fgets(singleline,150,fpointer);
+    puts(singleline);
+   }
+    fclose(fpointer);
+
+    return 0;
+
+
+}
