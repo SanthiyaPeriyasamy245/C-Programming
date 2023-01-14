@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+int calci(int year);
+int main()
+{
+    int year;
+    printf("enter the years you have been worked?");
+    scanf("%d",&year);
+    int bonus = calci(year);
+    printf("your bonus amount is %d",bonus);
+   return 0;
+
+}
+int calci(int year)
+{
+    int bonus=year*1000;
+    if(year>10)
+    {
+        bonus+=1200;
+
+    }
+    return bonus;
+}
