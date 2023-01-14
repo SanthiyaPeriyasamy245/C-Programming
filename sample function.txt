@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+void sample();
+int main()
+{
+   sample();
+    return 0;
+
+
+}
+void sample()
+{
+printf("hey buddy!\n");
+printf("sam is a lovely person!");
+return ;
+}
