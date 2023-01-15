@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int value;
+     int rem;
+    int count=0;
+    int sum=0;
+    printf("enter the value:");
+    scanf("%d",&value);
+    int x=value;
+    while(value!=0)
+    {
+         rem=value%10;
+        value=value/10;
+        count+=1;
+    }
+    while(value!=0)
+    {
+        rem=value%10;
+        value=value/10;
+        sum=sum+pow(rem,count);
+    }
+    if(value==sum)
+    {
+
+
+    printf("the given number %d is an armstrong number!",x);
+    }
+    else{
+        printf("the givennumber %d is not a armstrong number!!",x);
+    }
+    return 0;
+}
