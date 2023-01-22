@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+int reverse(int y);
+int main()
+{
+    int c;
+    printf("enter a value:\n");
+    scanf("%d",&c);
+      int v=reverse(c);
+     printf("Reverse of %d is %d\n",c,v);
+
+     return 0;
+ }
+
+ int reverse(int y)
+ {
+     int rev=0;
+   while(y!=0){
+
+          int rem=y%10;
+          rev=rev*10+rem;
+          y=y/10;
+}
+return rev;
+}
