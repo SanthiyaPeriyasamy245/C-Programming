@@ -1,0 +1,39 @@
+#include<stdio.h>
+int checkProductInAffordablePrice(int priceOfAnItem,int totalAmount);
+int main()
+{
+    int noofHundredRupeenotes,noofTenRupeenotes,noofOneRupeenotes,priceOfAnItem,totalAmount, result;
+    printf("the number of 100 rupee notes:");
+    scanf("%d",&noofHundredRupeenotes);
+    printf("the number of 10 rupee notes:");
+    scanf("%d",&noofTenRupeenotes);
+    printf("the number of 1 rupee notes:");
+    scanf("%d",&noofOneRupeenotes);
+    printf("the price of an item:");
+    scanf("%d",&priceOfAnItem);
+    if((noofHundredRupeenotes<=0)||(noofTenRupeenotes<=0)||(noofOneRupeenotes<=0)||(priceOfAnItem<=0))
+       {
+           printf("invalid Input");
+       }
+       else
+        {
+             totalAmount=(noofHundredRupeenotes*100)+(noofTenRupeenotes*10)+(noofOneRupeenotes*1);
+    result= checkProductInAffordablePrice( priceOfAnItem,totalAmount);
+    printf("%d",result);
+        }
+
+    return 0;
+}
+
+int checkProductInAffordablePrice(int priceOfAnItem,int totalAmount)
+{
+
+
+    if(priceOfAnItem<=totalAmount)
+    {
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
