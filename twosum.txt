@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define max 50
+int main()
+{
+    int key,i,j,c,f;
+    printf("enter the value of c (no.of.elements):\n");
+    scanf("%d",&c);
+    printf("enter your target:\n");
+    scanf("%d",&key);
+    int n[max];
+    printf("enter the array elements:\n");
+    for(f=0;f<=c;f++)
+    {
+        scanf("%d",&n[f]);
+    }
+    for(i=0;i<=c;i++)
+    {
+        for(j=i+1;j<=c;j++){
+            if(key==n[i]+n[j])
+            {
+                printf("{%d %d}",i,j);
+                break;
+            }
+        }
+    }
+    return 0;
+
+}
