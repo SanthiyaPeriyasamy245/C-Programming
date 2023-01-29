@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+  int value1,value2,value;
+  scanf("%d",&value);
+  value1=value;
+  value2=0;
+  while(value!=-1)
+  {
+    scanf("%d",&value);
+    if(value1<value)
+    {
+      value2=value1;
+      value1=value;
+    }
+  }
+  if(value2!=0)
+  {
+    printf("%d",value2);
+  }
+  else
+  {
+    printf("%d",0);
+  }
+  return 0;
+}
