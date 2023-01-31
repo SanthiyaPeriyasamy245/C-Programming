@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int N,i,j,value,upper=1;
+    scanf("%d",&N);
+    for(i=0;i<N;i++)
+    {
+        for(j=0;j<N;j++)
+        {
+            scanf("%d",&value);
+            if(i>j&&value!=0)
+            {
+                upper=0;
+                
+            }
+        }
+    }
+    if(upper!=0)
+    {
+        printf("%d",1);
+    }
+    else{
+        printf("%d",0);
+    }
+    
+
+    return 0;
+}
