@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+int n,t=0,s;
+scanf("%d",&n);
+while(n!=-1)
+{
+if(t<n)
+{
+s=t;
+t=n;
+}
+else if(t>n)
+{
+s=n;
+}
+else
+{
+s=0;
+}
+scanf("%d",&n);
+}
+printf("%d",s);
+return 0;
+}
+
+
+
